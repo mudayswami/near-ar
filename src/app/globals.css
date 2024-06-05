@@ -4,6 +4,166 @@
 
 
 .main-bg{
-background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(40,141,225,1) 57%, rgba(45,91,253,1) 100%);
+background: rgb(73, 131, 132);
+background: linear-gradient(0deg, rgb(70, 160, 162) 0%, rgb(82, 136, 180) 57%, rgb(129, 150, 227) 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.fontz{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.main-gradient{
+    /* linear-gradient(to right, #6200ff 1%, #ffe0c7 48%, #76660e 100%) */
+    background-image: linear-gradient(to right, #a874fb 1%, #E2C8B4 48%, #f0d440 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-grad{
+    background: linear-gradient(to right, #a379e8 1%, #e2c8b4e9 48%, #e3cc5b 100%);
+}
+
+.gr-1 {
+    background-image: linear-gradient(to right, #34ebba 0%, #6ce6ff 50%, #a174ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.gr-2 {
+    background-image: linear-gradient(to right, #ff6b6b 0%, #ffd93d 50%, #ff8c42 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.gr-3 {
+    background-image: linear-gradient(to right, #d4fc79 0%, #96e6a1 50%, #d4a1fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.gr-4 {
+    background-image: linear-gradient(to right, #a874fb 0%, #c08cfc 50%, #e0a1fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.gr-5 {
+    background: linear-gradient(313deg, rgb(76 52 52) 0%, rgb(65 33 72) 57%, rgb(31 6 38) 100%);
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* color: transparent; */
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: auto;
+    height: auto;
+    background: linear-gradient(to right, #a874fb 0%, #c08cfc 50%, #e0a1fc 100%);
+    border-radius: 10px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    /* animation: vibrate 0.1 infinite 3s; */
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    background: linear-gradient(to right, #a874fb 0%, #c08cfc 50%, #e0a1fc 100%);
+    height: 5px;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background: url('/logo.png') no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: -23px; /* Adjust to center the thumb */
+    transition: transform 0.8s ease;
+  }
+  input[type="range"]:active::-webkit-slider-thumb {
+    transform: scale(1.2); /* Scale up the thumb on active for better UX */
+  }
+  
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 10px;    
+    background: linear-gradient(to right, #a874fb 0%, #dbd0e7 50%, #e0a1fc 100%);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 1000px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    background: url('/logo.png') no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+
+  }
+  input[type="range"]:active::-moz-range-thumb {
+    transform: scale(1.2); /* Scale up the thumb on active for better UX */
+  }
+  
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 10px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    
+  }
+  
+  input[type="range"]::-ms-thumb {
+    width: 1000px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    background: url('/logo.png') no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+
+  @keyframes vibrate {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(-1px, 1px);
+    }
+    40% {
+        transform: translate(-1px, -1px);
+    }
+    60% {
+        transform: translate(1px, 1px);
+    }
+    80% {
+        transform: translate(1px, -1px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
